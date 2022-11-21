@@ -9,8 +9,25 @@
     <title>Vue Hello</title>
 </head>
 <body>
-    <div id="app"></div>
-
+    <div id="app">
+        <main>
+            <div class="container py-3">
+                <h1 class="mb-3">Meet our Team</h1>
+                <div class="row row-cols-6">
+                    <div class="col">
+                        <div class="card">
+                            <img :src="photo" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">{{name}} {{surname}}</h5>
+                                <p class="card-text">{{job}}</p>
+                                <a href="#" class="btn btn-primary" @click="onBtnClick">Send Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
